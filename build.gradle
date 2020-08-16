@@ -11,6 +11,7 @@ sourceCompatibility = '1.8'
 
 repositories {
 	mavenCentral()
+	
 }
 
 dependencies {
@@ -22,5 +23,8 @@ dependencies {
 //	compile ( 'org.springframework.boot:spring-boot-devtools')
 	compile('org.springframework.boot:spring-boot-starter-data-jpa')
 		compile('com.h2database:h2')
+		compile('com.fasterxml.jackson.core:jackson-databind:2.9.8')
+		compile("org.json:json:20180813")
+	//	compile "Telstra:TelstraMessaging:1.0.0"
 }	
 
