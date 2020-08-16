@@ -1,4 +1,4 @@
-package com.gov.hack.model;
+package com.gov.hack.demo.model;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;

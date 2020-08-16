@@ -10,8 +10,8 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.gov.hack.dao.VolunteerRepository;
-import com.gov.hack.model.VolunteerProfile;
+import com.gov.hack.demo.dao.VolunteerRepository;
+import com.gov.hack.demo.model.VolunteerProfile;
 
 @RestController
 public class DisasterResponseController {
@@ -22,6 +22,7 @@ public class DisasterResponseController {
 	@PostMapping("/saveVolunteerDetails")
 	public String saveVoluteerDetails(@RequestBody VolunteerProfile volunteerProfile)
 	{
+		
 		repository.save(volunteerProfile);
 		return "Volunteer Information saved";
 	}
